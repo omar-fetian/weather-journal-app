@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.card {
+  background-color: rgb(0 0 0 / 0.8);
+  color: #fff;
+  padding: 2em;
+  border-radius: 30px;
+  margin: 1em;
+  width: 100%;
+  max-width: 600px;
+  transition: scale 3s ease-in-out;
+  position: relative;
+}
+
+.card::after {
+  content: 'Copyright © open weather map All rights reserved';
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-bar,
+.feeling {
+  background-color: rgb(255 255 255 / 0.8);
+  margin-right: 0.5em;
+  border-radius: 30px;
+  padding: 0.5em;
+  padding-left: 0.8em;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 120%;
+  width: 80%;
+}
+
+.search-bar:focus,
+.feeling:focus {
+  background-color: rgb(255 255 255);
+}
+
+.search-btn {
+  border-radius: 20px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: rgb(255 255 255 / 0.8);
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: rgb(255 255 255);
+  transition: 0.2s ease-in-out;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+
+}
+
+.humidity,
+.your-feeling,
+.wind-speed {
+  margin-left: 10px;
+  font-size: 120%;
+}
+
+.date,
+.time {
+  font-size: 90%;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.hide-details {
+  visibility: hidden;
+  height: 0;
+  transition: visibility 2s linear;
+}
+
+/* .show-details {
+  visibility: visible;
+  height: auto;
+  transition: visibility 2s linear;
+} */
+
+.error {
+  animation: shake 0.2s ease-in-out 0s 2;
+  box-shadow: 0 0 0.5em red;
+}
+
+span {
+  color: palevioletred;
+  font-size: 110%;
+}
+
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+
+  25% {
+    margin-left: 0.5rem;
+  }
+
+  75% {
+    margin-left: -0.5rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}

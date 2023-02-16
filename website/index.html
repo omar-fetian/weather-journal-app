@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+    rel="stylesheet">
+  <title>Weather APP</title>
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="title">Weather Journal App</h1>
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Enter city Zip Code">
+      <input type="text" class="feeling" placeholder="How do you feel today?">
+      <button class="search-btn">Enter</button>
+    </div>
+    <div class="weather hide-details">
+      <h2 class="city">Weather in Cairo</h2>
+      <div class="date"></div>
+      <div class="time"></div>
+      <h2 class="temp">20°C</h2>
+      <div class="flexBox">
+        <img src="" alt="" class="icon">
+        <div class="description">sunny</div><br>
+      </div>
+      <div class="humidity">Humidity: 20%</div><br>
+      <div class="wind-speed">Wind speed: 2 Km/h</div><br>
+      <div class="your-feeling">feeling nice</div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
